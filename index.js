@@ -49,6 +49,11 @@ bookStoreTitle.textContent = bookStore.name;
 
 const bookList = document.getElementById('book-list');
 
+const placeholder = document.getElementById('delete-this');
+if (placeholder) {
+    placeholder.remove();
+}
+
 bookStore.books.forEach(book => {
     const bookContainer = document.createElement('li');
     const bookTitle = document.createElement('h3');
